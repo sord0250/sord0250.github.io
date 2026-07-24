@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sway | Spencer Ord</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body class="sway-page">
+		<header class="site-header">
+			<div class="container nav-bar">
+				<a class="brand" href="../index.html">Spencer Ord | Project and AI Portfolio</a>
+				<nav class="site-nav" aria-label="Primary navigation">
+					<a href="../index.html">Home</a>
+					<a href="jukeboxd.html">Jukeboxd</a>
+					<a href="ncelt.html">NCELT</a>
+					<a href="sway.html" class="active">Sway</a>
+					<a href="misc.html">Other Projects</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="project-page">
+			<div class="container">
+				<section class="project-hero">
+					<p class="eyebrow">Work in progress</p>
+					<h1>Sway</h1>
+					<div class="project-summary">
+						<p class="project-intro">Sway is a nature wellness app currently in progress. It is being shaped as a product centered on daily outdoor activity, stress reduction, and a more engaging wellness experience supported by an artistic visual direction.</p>
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bzqBpc8i1OU?si=ecfuj8n5yA26mr7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</section>
+
+					<section class="project-dashboard">
+						<div class="project-dashboard-top">
+							<article class="project-panel project-dashboard-card">
+								<p class="eyebrow">Problem</p>
+								<h3>Why Sway exists</h3>
+								<p>18-34-year-olds report average stress of 6 out of 10, compared to 3.4 among adults 65 and older. Most wellness apps run on the same playbook (streaks, badges, daily goals) because it drives retention. Users describe losing a 200-day streak and feeling worse, not better.</p>
+							</article>
+
+							<article class="project-panel project-dashboard-card">
+								<p class="eyebrow">Research</p>
+								<h3>How I validated it</h3>
+								<p>There is a lot of statistical evidence that highlight the healing and relaxing aspects of nature. Simply being in nature for 10 minutes can reduce stress and improve mood. Our entire app is built around these findings. Get people to a place where they connect with nature on a regular basis.</p>
+							</article>
+						</div>
+
+						<article class="project-panel project-dashboard-decisions">
+							<p class="eyebrow">Decisions</p>
+							<h3>What shaped the product</h3>
+							<ol class="project-step-list">
+								<li>
+									<span class="project-step-number">1</span>
+									<div class="project-step-copy"><strong>Studio Ghibli-inspired visuals:</strong>The app needed to mirror the calming and peaceful aspects of nature, and no art style does that better in my opinion than Studio Ghibli.</div>
+								</li>
+								<li>
+									<span class="project-step-number">2</span>
+									<div class="project-step-copy"><strong>Flexible 'goal' setting:</strong>The app shouldn't cause stress. Users can't loose their streaks, it simply tracks minutes and total days outside. They also decide how many days they want to try to get outside per week. Our reminders will work around that.</div>
+								</li>
+								<li>
+									<span class="project-step-number">3</span>
+									<div class="project-step-copy"><strong>Nature Sounds:</strong>For days that are rainy or users are too difficult to get outside, the app provides calming nature sounds to re-create that calming environment. This still counts towards their goals.</div>
+								</li>
+								<li>
+									<span class="project-step-number">4</span>
+									<div class="project-step-copy"><strong>Your Personal Nature Map:</strong>When a user logs their outdoor activities, the app tracks (with permission) their location. Over time, this data fills their personal map to show them where their calm spots are.</div>
+								</li>
+							</ol>
+						</article>
+
+						<div class="project-impact-grid">
+							<article class="project-panel project-metric project-impact-card--ai">
+								<span>What I learned</span>
+								<strong>Product Principles</strong>
+								<p>The biggest thing I've learned building Sway is ruthless focus on the problem: if a feature doesn't solve it, it doesn't belong in the MVP. The clearest example was a nature journal idea I wanted to build, until my friend pointed out it didn't actually serve the real goal of getting people outside consistently each week, so I cut it. That same discipline showed up when I chose a single daily observation prompt over streak-based engagement, and again in my onboarding research, where studying Snapchat, Duolingo, and Peach taught me how much to ask of a user before they've felt any value, which shaped Sway's onboarding flow that skips account creation and leads with value instead.</p>
+							</article>
+							<article class="project-panel project-metric project-impact-card--wide">
+								<span>AI uses</span>
+								<div class="project-ai-mini-grid">
+									<div>
+										<strong>Market research</strong>
+										<p>ChatGPT's Deep research helped validate the concept. Perplexity AI helped in getting concrete and accurate statistics.</p>
+									</div>
+									<div>
+										<strong>Stack selection</strong>
+										<p>Mobile-app development was new to me. ChatGPT and Claude AI helped compare cross-platform options, allowing me to find Expo Go and use that for my testing environment.</p>
+									</div>
+									<div>
+										<strong>Implementation</strong>
+										<p>Used Replit for a protoype. Then I created the initial code structure, but Codex conducted most of the environment setup. It also assisted with feature changes and debugging.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+			</div>
+		</main>
+	</body>
+</html>

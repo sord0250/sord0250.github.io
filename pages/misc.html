@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Other Projects | Spencer Ord</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body class="other-projects-page">
+		<header class="site-header">
+			<div class="container nav-bar">
+				<a class="brand" href="../index.html">Spencer Ord | Project and AI Portfolio</a>
+				<nav class="site-nav" aria-label="Primary navigation">
+					<a href="../index.html">Home</a>
+					<a href="jukeboxd.html">Jukeboxd</a>
+					<a href="ncelt.html">NCELT</a>
+					<a href="sway.html">Sway</a>
+					<a href="misc.html" class="active">Other Projects</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="project-page">
+			<div class="container">
+				<section class="project-hero">
+					<p class="eyebrow">Additional work</p>
+					<h1>Other Projects</h1>
+					<nav class="project-mini-nav" aria-label="Project navigation">
+						<a href="#portfolio-website-header">Portfolio Website</a>
+						<a href="#automated-reports-header">Automated Reports</a>
+						<a href="#doorbell-lab-header">Doorbell Lab</a>
+						<a href="#scripting-walkthrough-header">Scripting Walkthrough</a>
+					</nav>
+				</section>
+
+				<section class="other-projects-list" aria-label="Other projects">
+					<article class="other-project-card">
+						<div class="other-project-header" id="portfolio-website-header">
+							<p class="eyebrow">Project One</p>
+							<h2>Portfolio Website</h2>
+						</div>
+						<div class="other-project-grid">
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Project summary</p>
+								<h3>What I built</h3>
+								<p>Figuring out the best way to share my projects, thinking abilities, and AI usage was an exciting adventure. A trusted career advisor recommended creating a website, so I began by studying other portfolio websites. After collecting the features I found the most engaging, I used AI to create the website in a human in the middle style of development. This gave me a chance to reflect on what I've learned through my endevours, which was invaluable.</p>
+							</section>
+
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">AI uses</p>
+								<h3>How AI helped</h3>
+								<p>GitHub Copilot's plan and agent features helped turn my rough mockup into working HTML and CSS, speed up layout iteration, and clean up structure as the site grew. I used it as a building partner while keeping the content, project choices, and final visual direction under my control.</p>
+								<h4>TOOLS: GitHub Copilot • ChatGPT • Perplexity</h4>
+							</section>
+						</div>
+					</article>
+
+					<article class="other-project-card">
+						<div class="other-project-header" id="automated-reports-header">
+							<p class="eyebrow">Project Two</p>
+							<h2>Automated Weekly Placement Reports</h2>
+						</div>
+						<div class="other-project-grid">
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Project summary</p>
+								<h3>What I built</h3>
+								<p>At my BCC job, I built an automated reporting system that sends weekly placement reports every Friday. The system creates both a leadership report covering every BCC program and individual program reports for career directors, tracking full-time and internship placement data, class size, seeking status, and overall placement rate. A daily runner checks active cohorts, updates the right Excel workbooks with SQL-backed data, handles special program cases, and prepares the emails for the correct audience. <b>These 15 reports saved my team 2+ hours a week, aligned career directors with leadership, and gave my data team week-by-week historical data.</b></p>
+							</section>
+
+							<div class="other-project-subgrid other-project-subgrid--bare">
+								<section class="other-project-subpanel">
+									<h3>How AI helped</h3>
+									<p>Most of the project was built by me. ChatGPT helped me identify useful tools and libraries, compare implementation options, and refine individual functions as I worked through the code.</p>
+								</section>
+								<section class="other-project-subpanel">
+									<h3>Product experience</h3>
+									<p>I managed requests from about 15 full-time employee stakeholders and decided which needs were worth implementing in the code or report. For example, my boss wanted data visualizations, but Excel did not automate them cleanly, so I chose to create monthly visualizations by hand instead.</p>
+								</section>
+							</div>
+						</div>
+					</article>
+
+					<article class="other-project-card">
+						<div class="other-project-header" id="doorbell-lab-header">
+							<p class="eyebrow">Project Three</p>
+							<h2>ECEn 225 Doorbell Lab</h2>
+						</div>
+						<div class="other-project-grid">
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Project summary</p>
+								<h3>What I built</h3>
+								<p>I built a Raspberry Pi doorbell that boots into a welcome screen, responds to a joystick button press, captures a photo, and sends the image to a server so it can be saved to a website. The project also includes a hidden menu for taking pictures, applying filters, and managing files, which gave me a chance to connect embedded software, device input, and simple networking into one complete system.</p>
+							</section>
+
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Technical skills</p>
+								<h3>Tools and systems</h3>
+								<div class="project-tag-row">
+									<span class="project-tag">Raspberry Pi</span>
+									<span class="project-tag">C programming</span>
+									<span class="project-tag">GPIO input</span>
+									<span class="project-tag">Camera capture</span>
+									<span class="project-tag">TCP sockets</span>
+									<span class="project-tag">pthread threads</span>
+									<span class="project-tag">systemd service</span>
+									<span class="project-tag">File I/O</span>
+								</div>
+							</section>
+						</div>
+					</article>
+
+					<article class="other-project-card">
+						<div class="other-project-header" id="scripting-walkthrough-header">
+							<p class="eyebrow">Project Four</p>
+							<h2>How to Script Tasks using Python</h2>
+						</div>
+						<div class="other-project-grid">
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Project summary</p>
+								<h3>What I built</h3>
+								<p>I created a beginner-friendly walkthrough that teaches how to turn repetitive work into a Python script, then schedule it to run automatically. The guide walks through a real example using CSV data, email delivery, and Windows Task Scheduler, so someone with little scripting experience can still follow the full process from setup to automation.</p>
+							</section>
+
+							<section class="project-panel other-project-panel">
+								<p class="eyebrow">Technical skills</p>
+								<h3>Communication strengths</h3>
+								<div class="project-tag-row">
+									<span class="project-tag">Technical writing</span>
+									<span class="project-tag">Plain-language guidance</span>
+									<span class="project-tag">Teaching beginners</span>
+									<span class="project-tag">Process breakdowns</span>
+									<span class="project-tag">Step-by-step instructions</span>
+									<span class="project-tag">Audience awareness</span>
+									<span class="project-tag">Translating technical ideas</span>
+									<span class="project-tag">Documentation</span>
+								</div>
+							</section>
+						</div>
+					</article>
+				</section>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-bar">
+				<p>Spencer Ord</p>
+				<a>2026</a>
+			</div>
+		</footer>
+	</body>
+</html>

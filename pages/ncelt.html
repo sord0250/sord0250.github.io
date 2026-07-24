@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>NCELT | Spencer Ord</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body class="ncelt-page">
+		<header class="site-header">
+			<div class="container nav-bar">
+				<a class="brand" href="../index.html">Spencer Ord | Project and AI Portfolio</a>
+				<nav class="site-nav" aria-label="Primary navigation">
+					<a href="../index.html">Home</a>
+					<a href="jukeboxd.html">Jukeboxd</a>
+					<a href="ncelt.html" class="active">NCELT</a>
+					<a href="sway.html">Sway</a>
+					<a href="misc.html">Other Projects</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="project-page">
+			<div class="container">
+				<section class="project-hero">
+					<p class="eyebrow">Cybersecurity compliance workflow</p>
+					<h1>NCELT</h1>
+					<div class="project-summary">
+						<p class="project-intro">NCELT is a local web app for organizing cybersecurity compliance evidence. It helps teams track files, map them to NIST CSF 2.0 outcomes, assign owners, and monitor review timing so evidence stays ready for audits, internal reviews, and GRC workflows.</p>
+						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QToSK9z2mIE?si=3Boz4pPjgtYJVjDu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</section>
+
+					<section class="project-dashboard">
+						<div class="project-dashboard-top">
+							<article class="project-panel project-dashboard-card">
+								<p class="eyebrow">Problem</p>
+								<h3>Why NCELT exists</h3>
+								<p>Evidence collection gets fragmented across shared drives, email threads, and spreadsheets. I also wanted to get a better understanding of GRC workflows and a cybersecurity framework. I got advice from my professor Albert Tay on this project.</p>
+							</article>
+
+							<article class="project-panel project-dashboard-card">
+								<p class="eyebrow">Research</p>
+								<h3>How I validated it</h3>
+								<p>I had to learn how evidence is collected, managed, and reviewed in cybersecurity contexts. What types of evidence to people use the most, and how do compliance professionals interact with it? I learned that someone needs to own it, that evidence needs to be mapped to specific controls, and that it should be reviewed periodically.</p>
+							</article>
+						</div>
+
+						<article class="project-panel project-dashboard-decisions">
+							<p class="eyebrow">Decisions</p>
+							<h3>What shaped the product</h3>
+							<ol class="project-step-list">
+								<li>
+									<span class="project-step-number">1</span>
+									<div class="project-step-copy"><strong>The Data Model</strong>Created an Entity Relationship Diagram (ERD) that would shape how data was processed in this web application, the core entity being the evidence record.</div>
+								</li>
+								<li>
+									<span class="project-step-number">2</span>
+									<div class="project-step-copy"><strong>Locally Hosted Application</strong>Due to the sensitive nature of the data, I decided to build a locally hosted application to ensure data security and compliance. Nothing is uploaded to the cloud, and evidence names are edited for privacy.</div>
+								</li>
+								<li>
+									<span class="project-step-number">3</span>
+									<div class="project-step-copy"><strong>The Review Lifecycle</strong>Designed the review process around audit readiness rather than simple file storage. Review times can be manually changed based on compliance requirements.</div>
+								</li>
+								<li>
+									<span class="project-step-number">4</span>
+									<div class="project-step-copy"><strong>Ownership and Access Control</strong>Implemented a system for assigning and managing ownership of evidence records, ensuring proper access controls are in place. Establishing who's in charge of each piece of evidence was a key consideration.</div>
+								</li>
+							</ol>
+						</article>
+
+						<div class="project-impact-grid">
+							<article class="project-panel project-metric project-impact-card--ai">
+								<span>What I learned</span>
+								<strong>Product Principles</strong>
+								<p>NCELT taught me GRC fundamentals as much as product thinking. The core problem was fragmented evidence collection across drives, email, and spreadsheets, so I researched how compliance professionals actually manage evidence before designing anything. That research drove four key decisions: an ERD centered on evidence records as the core entity, a locally hosted architecture to prioritize data security over cloud convenience, a review lifecycle built around audit readiness rather than simple storage, and ownership and access controls so accountability was always clear. Even outside a typical product context, the discipline was the same: understand the domain's real constraints before designing around them.</p>
+							</article>
+							<article class="project-panel project-metric project-impact-card--wide">
+								<span>AI uses</span>
+								<div class="project-ai-mini-grid">
+									<div>
+										<strong>Product design</strong>
+										<p>Although I brought the data model and features to the table, AI helped create the visual design and user interface elements. Through multiple iterations with Codex, I landed on a sleek tech design.</p>
+									</div>
+									<div>
+										<strong>Local Stack selection</strong>
+										<p>ChatGPT helped me compare options for the local app and introduced me to technologies I didn't know about. This allowed me to use optimize effectively.</p>
+									</div>
+									<div>
+										<strong>Implementation</strong>
+										<p>Codex supported routes and app logic, including connecting my local database to the frontend and debugging issues.</p>
+									</div>
+								</div>
+							</article>
+						</div>
+					</section>
+			</div>
+		</main>
+	</body>
+</html>
