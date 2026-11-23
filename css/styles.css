@@ -262,6 +262,114 @@ a {
   border-color: #b9c7ff;
   color: #282932;
 }
+
+.salesforce-page {
+  color-scheme: light;
+  --bg: #f4f9fb;
+  --surface: #ffffff;
+  --surface-soft: #e9f4f8;
+  --border: #cfe3ec;
+  --text: #0f2a3a;
+  --muted: #47606f;
+  --navy: #0f2a3a;
+  --navy-2: #0b7a99;
+  --light-blue: #0b8fb3;
+  --light-blue-soft: #d4eef6;
+  --shadow: 0 18px 40px rgba(15, 42, 58, 0.09);
+  --shadow-strong: 0 16px 34px rgba(11, 143, 179, 0.2);
+  background: linear-gradient(180deg, #ffffff 0%, #f4f9fb 100%);
+}
+
+.salesforce-page .site-header {
+  background: #0f2a3a;
+  border-bottom-color: rgba(212, 238, 246, 0.16);
+}
+
+.salesforce-page .brand,
+.salesforce-page .site-nav a:hover,
+.salesforce-page .site-nav a.active {
+  color: #ffffff;
+}
+
+.salesforce-page .site-nav a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.salesforce-page .site-nav a::after {
+  background: #4fc3e3;
+}
+
+.salesforce-page .eyebrow,
+.salesforce-page .project-metric span {
+  color: #0b7a99;
+}
+
+.sf-diagram {
+  margin: 1.25rem 0 0;
+  padding: 1.1rem;
+  border-radius: var(--radius);
+  background: var(--surface-soft);
+  border: 1px dashed var(--border);
+}
+
+.sf-diagram figcaption {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-align: center;
+}
+
+.sf-trigger {
+  width: fit-content;
+  margin: 0.85rem auto 0;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: var(--navy);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.sf-stage-row {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sf-stage-row li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.75rem 0.6rem;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--light-blue);
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.sf-stage-row span {
+  color: var(--light-blue);
+  font-weight: 700;
+}
+
+.sf-diagram-note {
+  margin: 0.9rem 0 0;
+  text-align: center;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 820px) {
+  .sf-stage-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 .hero {
   padding: var(--space-5) 0 0;
   background:
@@ -442,7 +550,7 @@ h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1rem;
 }
 
@@ -970,3 +1078,10 @@ h3 {
 
 
 
+
+.about-education {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.92rem;
+}
