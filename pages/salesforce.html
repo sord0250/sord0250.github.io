@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Salesforce Consulting | Spencer Ord</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body class="salesforce-page">
+		<header class="site-header">
+			<div class="container nav-bar">
+				<a class="brand" href="../index.html">Spencer Ord | Security, Systems &amp; AI</a>
+				<nav class="site-nav" aria-label="Primary navigation">
+					<a href="../index.html">Home</a>
+					<a href="salesforce.html" class="active">Salesforce</a>
+					<a href="jukeboxd.html">Jukeboxd</a>
+					<a href="ncelt.html">NCELT</a>
+					<a href="sway.html">Sway</a>
+					<a href="misc.html">Other Projects</a>
+				</nav>
+			</div>
+		</header>
+
+		<main class="project-page">
+			<div class="container">
+				<section class="project-hero">
+					<p class="eyebrow">Contract consulting &bull; In progress</p>
+					<h1>Salesforce Case Workflow</h1>
+					<div class="project-summary">
+						<p class="project-intro">A dental practice needed a reliable way to track each patient's implant treatment from first consultation to final install. I'm building a Salesforce workflow that moves every case through defined stages, automatically creates the tasks each stage requires, and puts everything about a patient's case on one screen.</p>
+						<figure class="sf-diagram" aria-label="Simplified workflow diagram">
+							<figcaption>Simplified view: one record-triggered flow, seven stages, tasks generated automatically</figcaption>
+							<div class="sf-trigger">Case status changes &rarr; flow runs</div>
+							<ol class="sf-stage-row">
+								<li><strong>Intake &amp; Consultation</strong><span>2 tasks</span></li>
+								<li><strong>Design &amp; Clinical Review</strong><span>4 tasks</span></li>
+								<li><strong>Surgical Scheduling</strong><span>3 tasks</span></li>
+								<li><strong>Healing &amp; Integration</strong><span>3 tasks</span></li>
+								<li><strong>Final Design &amp; Try-in</strong><span>3 tasks</span></li>
+								<li><strong>Manufacturing</strong><span>3 tasks</span></li>
+								<li><strong>Installation &amp; Close</strong><span>4 tasks</span></li>
+							</ol>
+							<p class="sf-diagram-note">22 tasks created automatically, each assigned to the right stage, so nothing depends on someone remembering the next step.</p>
+						</figure>
+					</div>
+				</section>
+
+				<section class="project-dashboard">
+					<div class="project-dashboard-top">
+						<article class="project-panel project-dashboard-card">
+							<p class="eyebrow">Problem</p>
+							<h3>Why this project exists</h3>
+							<p>Two earlier vendors had already worked in the client's Salesforce org, but the client wasn't happy with either one. That left a crowded org full of half-used objects and connections, while patient progress was still tracked inconsistently outside the system. The client needed something their team would actually use day to day.</p>
+						</article>
+
+						<article class="project-panel project-dashboard-card">
+							<p class="eyebrow">Discovery</p>
+							<h3>How I scoped it</h3>
+							<p>I started by learning how the team tracks a case today: who touches it, in what order, and which tools they rely on. I then mapped that against their existing technology stack and what was already built in Salesforce, so the design fit how they really work instead of forcing a new process on them.</p>
+						</article>
+					</div>
+
+					<article class="project-panel project-dashboard-decisions">
+						<p class="eyebrow">Decisions</p>
+						<h3>Key technical decisions</h3>
+						<ol class="project-step-list">
+							<li>
+								<span class="project-step-number">1</span>
+								<div class="project-step-copy"><strong>Audit before building</strong>I used AI alongside the Salesforce CLI to pull and review the org's existing metadata. That showed which objects, fields, and connections from earlier vendors could be reused, saving rebuild time and avoiding duplicate structures.</div>
+							</li>
+							<li>
+								<span class="project-step-number">2</span>
+								<div class="project-step-copy"><strong>Status-driven automation</strong>A single record-triggered flow branches on case status. When a case moves to a new stage, the flow creates that stage's required tasks automatically. It went through many versions in a dev sandbox before going anywhere near production.</div>
+							</li>
+							<li>
+								<span class="project-step-number">3</span>
+								<div class="project-step-copy"><strong>One screen per case</strong>I restructured the record pages to combine related information (patient details, images, implant details, open tasks, and current stage) into a single view with a visual stage path, so staff don't have to jump between records.</div>
+							</li>
+							<li>
+								<span class="project-step-number">4</span>
+								<div class="project-step-copy"><strong>Where sensitive files live</strong>Patient files are health data, so where they're stored is a security and compliance decision, not just a storage choice. I laid out the tradeoffs of keeping files in Salesforce versus an external system (access control, cost, and how much risk sits in one place) so the client could make an informed call.</div>
+							</li>
+						</ol>
+					</article>
+
+					<div class="project-impact-grid">
+						<article class="project-panel project-metric project-impact-card--ai">
+							<span>What I learned</span>
+							<strong>Key Takeaways</strong>
+							<p>Consulting is as much about communication as configuration. The technical work (flows, page layouts, metadata) moved quickly once I understood the org, but the most valuable conversations were explaining design options and their tradeoffs in plain language so the client could choose. Inheriting an org from two earlier vendors also taught me to audit before building: understanding what already exists is the fastest way to avoid adding more clutter.</p>
+						</article>
+						<article class="project-panel project-metric project-impact-card--wide">
+							<span>AI uses</span>
+							<div class="project-ai-mini-grid">
+								<div>
+									<strong>Org audit</strong>
+									<p>Paired AI with the Salesforce CLI to read through existing metadata quickly and summarize what was reusable versus what was leftover from earlier vendors.</p>
+								</div>
+								<div>
+									<strong>Flow design</strong>
+									<p>Used AI to pressure-test the flow structure and stage-to-task mapping before building it, catching edge cases early.</p>
+								</div>
+								<div>
+									<strong>Client communication</strong>
+									<p>Used AI to draft clear explanations of technical tradeoffs, which I then edited for the client's context.</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-bar">
+				<p>Spencer Ord</p>
+				<a>2026</a>
+			</div>
+		</footer>
+	</body>
+</html>
